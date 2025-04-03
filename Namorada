@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Namorada</title>
+    <style>
+        body {
+            background-color: #ffccd5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .heart {
+            font-size: 100px;
+            color: red;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+            text-align: center;
+        }
+        img {
+            max-width: 80%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="heart" onclick="showMessage()">❤️</div>
+    </div>
+    <div id="message" class="hidden">
+        <h1>Para você, meu amor</h1>
+        <img src="sua_imagem.jpg" alt="Nossa Foto">
+        <p>Nosso amor é eterno, meu amor oir vc é eterno, eu te amo tanto meu amo, vc me faz o homem mais feliz desse mundo!! eu te aodor meu amor 🤟🏻🖤 </p>
+        <audio controls autoplay>
+            <source src="nothing_else_matters.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio.
+        </audio>
+    </div>
+    <script>
+        function showMessage() {
+            document.getElementById('main').style.display = 'none';
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
