@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Namorada</title>
+    <style>
+        body {
+            background-color: #ffccd5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        .heart {
+            font-size: 100px;
+            color: red;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="heart" onclick="showMessage()">❤️</div>
+    </div>
+    <div id="message" class="hidden">
+        <h1>meu amor, deu um pouco de trabalho pra criar isso mas por vc vale apena, eu queria te dizer o quanto eu te amo meu amor, você é a lmais incrível q eu já conheci, vc mudou a minha vida no primeiro segundo q entrou nela, eu te adoro meu amor, você é a minha Deusa, eu sempre te adorarei, quero um dia poder ter lindos filhos com vc meu amor, ter uma linda casa, viajar o mundo com vc ter novas experiências juntos, mas só de ir na esquina com vc já é uma aventura kajskakskkskk, EU TE AMO MUITO MEU AMOR 🤟🏻🖤</h1>
+    </div>
+    <script>
+        function showMessage() {
+            document.getElementById('main').style.display = 'none';
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
